@@ -103,7 +103,7 @@ A smart, real-time **IoT-based security and surveillance system** powered by **E
 
 ---
 
-### 🛂 MFRC522 RFID Module (I2C Mode)
+### 🛂 WS1850S RFID Module: for Access Control. (I2C Mode)
 
 | Pin   | ESP32 GPIO | Description        |
 |--------|-------------|--------------------|
