@@ -1,0 +1,1619 @@
+[
+    {
+        "id": "f6c387b65b6ac751",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cfab686286b37cac",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f06ab4e69df251c1",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b86b9afe0afdb99d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5e05ddb508bbd1d3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "db7d4dcddd9d085d",
+        "type": "ui_tab",
+        "name": "MQTT",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1532c722e2f77c8c",
+        "type": "ui_group",
+        "name": "Humidity Value",
+        "tab": "db7d4dcddd9d085d",
+        "order": 3,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "616b8bc84daec211",
+        "type": "ui_group",
+        "name": "TimeTable",
+        "tab": "cc44ef8d73d95e8f",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cec3a5a74c02f7f0",
+        "type": "ui_group",
+        "name": "MQ2/Smoke values",
+        "tab": "db7d4dcddd9d085d",
+        "order": 4,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "89ac9f8212812ccd",
+        "type": "ui_group",
+        "name": "Student Table",
+        "tab": "cc44ef8d73d95e8f",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "75699d295cf69b86",
+        "type": "ui_group",
+        "name": "DOOR LOCK",
+        "tab": "db7d4dcddd9d085d",
+        "order": 4,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ea88a78fe88e3e3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5979af95fee5fe74",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5e5095ba7519adfc",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ab4830502e77970d",
+        "type": "MySQLdatabase",
+        "name": "Rupesh",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "student_attendence",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "cc44ef8d73d95e8f",
+        "type": "ui_tab",
+        "name": "Table",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e8542d8c330f5396",
+        "type": "ui_group",
+        "name": "Attendance Table",
+        "tab": "cc44ef8d73d95e8f",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b06d4278f4f69d76",
+        "type": "mqtt-broker",
+        "name": "ESP_CAM",
+        "broker": "http://192.168.132.125/",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7e4d909a8546c701",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8e7b73ac3d74752d",
+        "type": "ui_group",
+        "name": "CCTV",
+        "tab": "db7d4dcddd9d085d",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2b1a47ee.f243e8",
+        "type": "ui_group",
+        "name": "Authentication Log",
+        "tab": "95af1696.e8694",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95af1696.e8694",
+        "type": "ui_tab",
+        "name": "AUTHENTICATION",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d80bf1e2a4864bab",
+        "type": "ui_group",
+        "name": "Tempreture Values",
+        "tab": "db7d4dcddd9d085d",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ea98f288db306c9e",
+        "type": "ui_group",
+        "name": "MQ3/Alcohol Values",
+        "tab": "db7d4dcddd9d085d",
+        "order": 5,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "900ea97234cf077a",
+        "type": "ui_group",
+        "name": "Door Status",
+        "tab": "db7d4dcddd9d085d",
+        "order": 7,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "537ac274724cb815",
+        "type": "MySQLdatabase",
+        "name": "authentication",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "authentication",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "985202f0e8bf0a03",
+        "type": "mqtt in",
+        "z": "f6c387b65b6ac751",
+        "name": "MQ2/Smoke",
+        "topic": "mq2/smoke",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5979af95fee5fe74",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 700,
+        "wires": [
+            [
+                "b17c17d183a391f2",
+                "fa393010b063dc9c",
+                "930dbd97ab9b4c2a",
+                "a8acae168e6142a6"
+            ]
+        ]
+    },
+    {
+        "id": "cc229e989f415473",
+        "type": "mqtt in",
+        "z": "f6c387b65b6ac751",
+        "name": "MQ3/Alcohal",
+        "topic": "mq3/alcohal",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b86b9afe0afdb99d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 860,
+        "wires": [
+            [
+                "b17c17d183a391f2",
+                "472790af2789d965",
+                "930dbd97ab9b4c2a",
+                "87c073bb87868e2e"
+            ]
+        ]
+    },
+    {
+        "id": "b17c17d183a391f2",
+        "type": "debug",
+        "z": "f6c387b65b6ac751",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "fa393010b063dc9c",
+        "type": "ui_gauge",
+        "z": "f6c387b65b6ac751",
+        "name": "Gauge",
+        "group": "cec3a5a74c02f7f0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MQ2/Smoke Value",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "472790af2789d965",
+        "type": "ui_gauge",
+        "z": "f6c387b65b6ac751",
+        "name": "gauge",
+        "group": "ea98f288db306c9e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MQ3/Alchohal Values",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ae09195c.04bd6",
+        "type": "ui_template",
+        "z": "f6c387b65b6ac751",
+        "group": "8e7b73ac3d74752d",
+        "name": "ESP32 Video stream",
+        "order": 1,
+        "width": "8",
+        "height": "5",
+        "format": "<div>\n    <img src=\"https://raigarhsrishti.com/wp-content/uploads/2024/06/n6199426221719680377931b1508b2d3569aa4e4791613f1f9aab82a6ca9acd97f34f32377c85acdeb1c51a.jpg?w=350 width=\"350\" height=\"220\"\">\n    <!-- <img src=\"http://192.168.74.125:81/stream\" width=\"400\" height=\"250\"> -->\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 640,
+        "wires": [
+            [
+                "2fa7fa98d6164f24"
+            ]
+        ]
+    },
+    {
+        "id": "166734218eccf657",
+        "type": "mqtt in",
+        "z": "f6c387b65b6ac751",
+        "name": "tempreature",
+        "topic": "dht/tempreature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b86b9afe0afdb99d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 300,
+        "wires": [
+            [
+                "cbd672255fecea86",
+                "10a8464c135d998b",
+                "930dbd97ab9b4c2a",
+                "cf395e404f6bc988"
+            ]
+        ]
+    },
+    {
+        "id": "cbd672255fecea86",
+        "type": "debug",
+        "z": "f6c387b65b6ac751",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9dd4896f04e8ba87",
+        "type": "mqtt in",
+        "z": "f6c387b65b6ac751",
+        "name": "humidity",
+        "topic": "dht/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b86b9afe0afdb99d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 520,
+        "wires": [
+            [
+                "cbd672255fecea86",
+                "698be0459d31a2e0",
+                "930dbd97ab9b4c2a",
+                "06dc2778b3fd4ad1"
+            ]
+        ]
+    },
+    {
+        "id": "10a8464c135d998b",
+        "type": "ui_gauge",
+        "z": "f6c387b65b6ac751",
+        "name": "Gauge",
+        "group": "d80bf1e2a4864bab",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Tempretare Value",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "698be0459d31a2e0",
+        "type": "ui_gauge",
+        "z": "f6c387b65b6ac751",
+        "name": "Gauge",
+        "group": "1532c722e2f77c8c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity Value",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2fa7fa98d6164f24",
+        "type": "debug",
+        "z": "f6c387b65b6ac751",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "930dbd97ab9b4c2a",
+        "type": "ui_chart",
+        "z": "f6c387b65b6ac751",
+        "name": "Bar Graph",
+        "group": "8e7b73ac3d74752d",
+        "order": 2,
+        "width": "8",
+        "height": "5",
+        "label": "Sensor Values",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf395e404f6bc988",
+        "type": "ui_chart",
+        "z": "f6c387b65b6ac751",
+        "name": "Graph",
+        "group": "d80bf1e2a4864bab",
+        "order": 2,
+        "width": "5",
+        "height": "4",
+        "label": "Last 24 hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 490,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06dc2778b3fd4ad1",
+        "type": "ui_chart",
+        "z": "f6c387b65b6ac751",
+        "name": "Graph",
+        "group": "1532c722e2f77c8c",
+        "order": 2,
+        "width": "5",
+        "height": "4",
+        "label": "Last 24 hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 490,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe0c0c0273958bc6",
+        "type": "ui_switch",
+        "z": "f6c387b65b6ac751",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "75699d295cf69b86",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "home/door_lock",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "unlock",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "lock",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 490,
+        "y": 1020,
+        "wires": [
+            [
+                "52f955b20029ca0d",
+                "e9c434be99ed80bb"
+            ]
+        ]
+    },
+    {
+        "id": "52f955b20029ca0d",
+        "type": "mqtt out",
+        "z": "f6c387b65b6ac751",
+        "name": "DOOR LOCK",
+        "topic": "home/door_lock",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b86b9afe0afdb99d",
+        "x": 720,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "e9c434be99ed80bb",
+        "type": "debug",
+        "z": "f6c387b65b6ac751",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f518e2027ccf9b26",
+        "type": "mqtt in",
+        "z": "f6c387b65b6ac751",
+        "name": "door_status/Reed_switch",
+        "topic": "door/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b86b9afe0afdb99d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 1180,
+        "wires": [
+            [
+                "8bde624a18bc1d18",
+                "4d5734c0aee84321"
+            ]
+        ]
+    },
+    {
+        "id": "8bde624a18bc1d18",
+        "type": "debug",
+        "z": "f6c387b65b6ac751",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "4d5734c0aee84321",
+        "type": "ui_text",
+        "z": "f6c387b65b6ac751",
+        "group": "900ea97234cf077a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Door/Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 490,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "a8acae168e6142a6",
+        "type": "ui_chart",
+        "z": "f6c387b65b6ac751",
+        "name": "Graph",
+        "group": "cec3a5a74c02f7f0",
+        "order": 2,
+        "width": "5",
+        "height": "4",
+        "label": "Last 24 hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 490,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87c073bb87868e2e",
+        "type": "ui_chart",
+        "z": "f6c387b65b6ac751",
+        "name": "Graph",
+        "group": "ea98f288db306c9e",
+        "order": 2,
+        "width": "5",
+        "height": "4",
+        "label": "Last 24 hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 490,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61f69ce06eb0f3f2",
+        "type": "debug",
+        "z": "cfab686286b37cac",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "372a95de22e22c01",
+        "type": "mqtt in",
+        "z": "cfab686286b37cac",
+        "name": "Authentication",
+        "topic": "Door/authentication",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b86b9afe0afdb99d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "ed1aeff7226aa488"
+            ]
+        ]
+    },
+    {
+        "id": "1890b2c1b931c393",
+        "type": "mysql",
+        "z": "cfab686286b37cac",
+        "mydb": "537ac274724cb815",
+        "name": "details",
+        "x": 910,
+        "y": 120,
+        "wires": [
+            [
+                "61f69ce06eb0f3f2",
+                "bc85a48abdb626c8"
+            ]
+        ]
+    },
+    {
+        "id": "98379865f7551018",
+        "type": "function",
+        "z": "cfab686286b37cac",
+        "name": "Insert values ",
+        "func": "// Check if a person was found\nif (msg.payload.length === 0) {\n    node.error(\"No data found.\");\n    return null;\n}\n\n// Extract person ID from the MySQL result\nvar personID = msg.payload[0].uid;\nvar name = msg.name;\n\n// Escape the name to avoid SQL injection or issues with special characters\nname = name.replace(/'/g, \"\\\\'\");\n\n// Prepare the SQL query to insert the attendance record\nvar sqlInsertQuery = `INSERT INTO authentication_log (person_id, name) VALUES (${personID}, '${name}')`;\n\n// Set the insert query in msg.payload\nmsg.topic = sqlInsertQuery;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 120,
+        "wires": [
+            [
+                "1890b2c1b931c393"
+            ]
+        ]
+    },
+    {
+        "id": "99ed7c5dfb9b36f3",
+        "type": "mysql",
+        "z": "cfab686286b37cac",
+        "mydb": "537ac274724cb815",
+        "name": "database",
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [
+                "98379865f7551018",
+                "05113e257ebc074b"
+            ]
+        ]
+    },
+    {
+        "id": "ed1aeff7226aa488",
+        "type": "function",
+        "z": "cfab686286b37cac",
+        "name": "find_person_id",
+        "func": "// Get the student ID from the incoming MQTT message\nvar name = msg.payload;\n\n// Prepare the SQL query to find the active lecture\nmsg.topic = `SELECT uid \n    FROM people \n    WHERE name = '${name}'`;\nmsg.name = name;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "99ed7c5dfb9b36f3"
+            ]
+        ]
+    },
+    {
+        "id": "05113e257ebc074b",
+        "type": "debug",
+        "z": "cfab686286b37cac",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3f2e297637b26db0",
+        "type": "mysql",
+        "z": "cfab686286b37cac",
+        "mydb": "537ac274724cb815",
+        "name": "details",
+        "x": 650,
+        "y": 240,
+        "wires": [
+            [
+                "3af98a3b824aec9a",
+                "f06c42eef52cd675"
+            ]
+        ]
+    },
+    {
+        "id": "bc85a48abdb626c8",
+        "type": "function",
+        "z": "cfab686286b37cac",
+        "name": "view table",
+        "func": "msg.topic = \"SELECT * FROM authentication_log;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "3f2e297637b26db0"
+            ]
+        ]
+    },
+    {
+        "id": "3af98a3b824aec9a",
+        "type": "ui_table",
+        "z": "cfab686286b37cac",
+        "group": "2b1a47ee.f243e8",
+        "name": "authentication details",
+        "order": 1,
+        "width": "15",
+        "height": "11",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 860,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f06c42eef52cd675",
+        "type": "debug",
+        "z": "cfab686286b37cac",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7d3913d2ae4e1a4f",
+        "type": "inject",
+        "z": "cfab686286b37cac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "bc85a48abdb626c8"
+            ]
+        ]
+    },
+    {
+        "id": "bc3fade68c601194",
+        "type": "mqtt in",
+        "z": "f06ab4e69df251c1",
+        "name": "Attendance",
+        "topic": "attendance/rfid",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5979af95fee5fe74",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "72c0690733746441",
+                "5ca8944a65801183",
+                "ce69b3ea104cf132",
+                "ca013226a27c7ed8",
+                "4f7260a8ac5d55e6"
+            ]
+        ]
+    },
+    {
+        "id": "278942fbe3660ba6",
+        "type": "mysql",
+        "z": "f06ab4e69df251c1",
+        "mydb": "ab4830502e77970d",
+        "name": "details",
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "8e2f9b84b019b7de",
+                "a20a7f028ce799c7"
+            ]
+        ]
+    },
+    {
+        "id": "ce69b3ea104cf132",
+        "type": "function",
+        "z": "f06ab4e69df251c1",
+        "name": "View Student table",
+        "func": "msg.topic = \"SELECT * FROM students;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "278942fbe3660ba6"
+            ]
+        ]
+    },
+    {
+        "id": "8e2f9b84b019b7de",
+        "type": "debug",
+        "z": "f06ab4e69df251c1",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a20a7f028ce799c7",
+        "type": "ui_table",
+        "z": "f06ab4e69df251c1",
+        "group": "89ac9f8212812ccd",
+        "name": "student details",
+        "order": 1,
+        "width": "10",
+        "height": "5",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 840,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6af2241433451dbf",
+        "type": "mysql",
+        "z": "f06ab4e69df251c1",
+        "mydb": "ab4830502e77970d",
+        "name": "details",
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "e10886f2784813b3",
+                "809ba1cf936ef32f"
+            ]
+        ]
+    },
+    {
+        "id": "ca013226a27c7ed8",
+        "type": "function",
+        "z": "f06ab4e69df251c1",
+        "name": "View  Attendance table",
+        "func": "msg.topic = \"SELECT * FROM attendance;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "6af2241433451dbf"
+            ]
+        ]
+    },
+    {
+        "id": "e10886f2784813b3",
+        "type": "debug",
+        "z": "f06ab4e69df251c1",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "809ba1cf936ef32f",
+        "type": "ui_table",
+        "z": "f06ab4e69df251c1",
+        "group": "e8542d8c330f5396",
+        "name": "attendance details",
+        "order": 1,
+        "width": "12",
+        "height": "11",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 850,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3a34d6d3d064cbf3",
+        "type": "mysql",
+        "z": "f06ab4e69df251c1",
+        "mydb": "ab4830502e77970d",
+        "name": "details",
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "b765963ad0bcfe1f",
+                "067b5394db691ecd"
+            ]
+        ]
+    },
+    {
+        "id": "4f7260a8ac5d55e6",
+        "type": "function",
+        "z": "f06ab4e69df251c1",
+        "name": "View Time table",
+        "func": "msg.topic = \"SELECT * FROM timetable;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "3a34d6d3d064cbf3"
+            ]
+        ]
+    },
+    {
+        "id": "b765963ad0bcfe1f",
+        "type": "debug",
+        "z": "f06ab4e69df251c1",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "067b5394db691ecd",
+        "type": "ui_table",
+        "z": "f06ab4e69df251c1",
+        "group": "616b8bc84daec211",
+        "name": "Timetable details",
+        "order": 1,
+        "width": "10",
+        "height": "5",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 850,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1d9954c658f3b025",
+        "type": "mysql",
+        "z": "f06ab4e69df251c1",
+        "mydb": "ab4830502e77970d",
+        "name": "database",
+        "x": 980,
+        "y": 180,
+        "wires": [
+            [
+                "4b1d82f1c337c4f6"
+            ]
+        ]
+    },
+    {
+        "id": "4b1d82f1c337c4f6",
+        "type": "debug",
+        "z": "f06ab4e69df251c1",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "72c0690733746441",
+        "type": "debug",
+        "z": "f06ab4e69df251c1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9cec83f805da905c",
+        "type": "function",
+        "z": "f06ab4e69df251c1",
+        "name": "mark_present",
+        "func": "// Check if a lecture was found\nif (msg.payload.length === 0) {\n    node.error(\"No active lecture found for the current time.\");\n    return null;\n}\n\n// Extract lecture ID from the MySQL result\nvar lectureID = msg.payload[0].id;\nvar studentID = msg.studentID;\n\n// Prepare the SQL query to insert the attendance record\nvar sqlInsertQuery = `INSERT INTO attendance (student_id, lecture_id) VALUES (${studentID}, ${lectureID})`;\n\n// Set the insert query in msg.payload\nmsg.topic = sqlInsertQuery;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 220,
+        "wires": [
+            [
+                "1d9954c658f3b025"
+            ]
+        ]
+    },
+    {
+        "id": "5ca8944a65801183",
+        "type": "function",
+        "z": "f06ab4e69df251c1",
+        "name": "find_lecture_id",
+        "func": "// Get the student ID from the incoming MQTT message\nvar studentID = msg.payload;\n\n// Prepare the SQL query to find the active lecture\nmsg.topic = `SELECT id \n    FROM timetable \n    WHERE TIME('09:05:00') BETWEEN TIME(start_time) AND TIME(end_time);`;\nmsg.studentID = studentID;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "2c567ffd50807d09"
+            ]
+        ]
+    },
+    {
+        "id": "2c567ffd50807d09",
+        "type": "mysql",
+        "z": "f06ab4e69df251c1",
+        "mydb": "ab4830502e77970d",
+        "name": "database",
+        "x": 620,
+        "y": 200,
+        "wires": [
+            [
+                "10d8046e61b3fc3a",
+                "9cec83f805da905c"
+            ]
+        ]
+    },
+    {
+        "id": "10d8046e61b3fc3a",
+        "type": "debug",
+        "z": "f06ab4e69df251c1",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 160,
+        "wires": []
+    }
+]
