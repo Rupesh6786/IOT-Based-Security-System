@@ -171,6 +171,77 @@ A smart, real-time **IoT-based security and surveillance system** powered by **E
 ![Authentication Flow](Image/7_Node-red-flow-authentication.png)
 
 ---
+## 🤖 Telegram Bot Setup using BotFather
+
+To enable Telegram notifications or bot control, follow these steps to create and configure a bot using **BotFather**:
+
+### ✅ Steps to Create a Telegram Bot
+
+1. **Open Telegram App**
+   Ensure you are logged in via the mobile or desktop app.
+
+2. **Search for BotFather**
+   Find `@BotFather` in Telegram and open the verified account.
+
+3. **Start the Conversation**
+   Click **Start** or send the command:
+
+   ```
+   /start
+   ```
+
+4. **Create a New Bot**
+   Send the command:
+
+   ```
+   /newbot
+   ```
+
+   Follow the prompts:
+
+   * **Name your bot** (e.g., `MySecurityBot`)
+   * **Username** must end with `bot` (e.g., `myhome_alert_bot`)
+
+5. **Copy the Bot Token**
+   After creation, BotFather provides a token like:
+
+   ```
+   123456789:ABCDefghIJKlmnoPQRstuVWxyz
+   ```
+
+   **Save this token securely** – it will be used in your code to interact with Telegram’s API.
+
+6. **Customize Your Bot (Optional)**
+   You can personalize your bot with the following BotFather commands:
+
+   * `/setuserpic` – Upload profile picture
+   * `/setdescription` – Short description
+   * `/setabouttext` – Bio/about text
+   * `/setcommands` – List available commands
+
+7. **Set Bot Commands**
+   Use `/setcommands` in BotFather and define the following commands:
+
+   ```
+   /status – Current system state
+   /lock – Lock the door
+   /unlock – Unlock the door
+   /sensors – Sensor data report
+   ```
+
+8. **Start the Bot**
+   Search for your bot username in Telegram and press **Start** to activate it.
+
+9. **Get Your Chat ID**
+   To send messages to yourself or a group:
+
+   * Send a message to your bot
+   * Open this URL in your browser (replace `<TOKEN>`):
+
+     ```
+     https://api.telegram.org/bot<TOKEN>/getUpdates
+     ```
+   * Find the `chat.id` in the response JSON. Use it in your code to send messages.
 
 ## 🤖 Telegram Bot Commands
 
