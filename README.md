@@ -150,25 +150,25 @@ A smart, real-time **IoT-based security and surveillance system** powered by **E
 ## 📸 Node-RED Dashboard & Flow Previews
 
 ### 🔐 Login Interface  
-![Login Screen](Images/1_Login_screen.png)
+![Login Screen](Image/1_Login_screen.png)
 
 ### 📊 Dashboard  
-![Main Dashboard](Images/2_Dashboard.png)
+![Main Dashboard](Image/2_Dashboard.png)
 
 ### 🧾 Authentication Logs  
-![Authentication Log](Images/3_Authentication_Log.png)
+![Authentication Log](Image/3_Authentication_Log.png)
 
 ### ⚙️ Settings Panel  
-![Settings](Images/4_Settings.png)
+![Settings](Image/4_Settings.png)
 
 ### 🔄 Login Flow  
-![Login Flow](Images/5_Node-red-flow-login.png)
+![Login Flow](Image/5_Node-red-flow-login.png)
 
 ### 📡 Dashboard Flow  
-![Dashboard Flow](Images/6_Node-red-flow-dashabord.png)
+![Dashboard Flow](Image/6_Node-red-flow-dashabord.png)
 
 ### 🔒 Authentication Flow  
-![Authentication Flow](Images/7_Node-red-flow-authentication.png)
+![Authentication Flow](Image/7_Node-red-flow-authentication.png)
 
 ---
 
